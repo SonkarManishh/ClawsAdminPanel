@@ -1,0 +1,87 @@
+<% layout("/layouts/boilerplate") %>
+
+    <body class="category-page">
+        <center>
+            <h1 class=" h-cat   mt-5  "> CATEGORY LIST</h1>
+        </center>
+        <div class="div-body ">
+            <div class="row mt-5 ms-0 ">
+                <div class=" card-cate col-sm-9 mb-3  ">
+                    <div class="card b-cate  " style="width: 18rem;">
+                        <div class="card-header card card-1 ms-5 mb-3 btn-outline-info  ">
+                            Merchandise
+                        </div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item   category-border ">
+                                 T-shirt
+                                    <form method="POST" action="/showcategory/?_method=DELETE">
+                                        <button class="btn btn-outline-danger me-4  del-btn category-b">Delete
+                                        </button>
+                                    </form>
+                            </li>
+                        </ul>
+
+                        <%for(let merchandise of allMerchandise){%>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item   category-border ">
+                                    <%=merchandise.title%>
+                                        <form method="POST" action="/showcategory/<%=merchandise._id%>/?_method=DELETE">
+                                            <button class="btn btn-outline-danger me-4  del-btn category-b">Delete
+                                            </button>
+                                        </form>
+                                </li>
+                            </ul>
+                             
+
+
+                            <%}%>
+
+
+                    </div>
+                </div>
+                <div class=" card-cate col-sm-3 ">
+                    <div class="card  b-cate " style="width: 18rem;">
+                        <div class="card-header card ms-5 card-1 mb-3 ">
+                            Equipment
+                        </div>
+                        <ul class="list-group list-group-flush ">
+                            <li class="list-group-item text-bg-light category-border">
+                                 Arm Wrestling Table <button class="btn btn-outline-danger me-4  del-btn category-b">Delete
+                                </button>        
+                            </li>
+                            <li class="list-group-item text-bg-light category-border">
+                                  Cup Power Handle <button class="btn btn-outline-danger me-4  del-btn category-b">Delete
+                                </button>        
+                            </li>
+                            <li class="list-group-item text-bg-light category-border">
+                                Grips <button class="btn btn-outline-danger me-4  del-btn category-b">Delete
+                                </button>        
+                            </li>
+
+                       
+                        <%for(let equipment of allEquipment){%>
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item text-bg-light category-border">
+                                    <%=equipment.title%>
+                                        <form method="POST" action="/showcategory/<%=equipment._id%>/?_method=DELETE">
+                                            <button class="btn btn-outline-danger del-btn category-b bg-light">Delete
+                                            </button>
+                                        </form>
+                                </li>
+
+                            </ul>
+                            <%}%>
+                            <li class="list-group-item text-bg-light category-border">
+                                Others <button class="btn btn-outline-danger me-4  del-btn category-b">Delete
+                                </button>        
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br />
+                <div class="div-cat"><button class="btn cat-btn m-4 btn-danger   " style="width: 15rem; "><a
+                            href="/category">Add Category</a></button></div>
+            </div>
+        </div>
+    </body>

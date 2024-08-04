@@ -1,0 +1,33 @@
+<% layout("/layouts/boilerplate") %>
+
+    <body>
+        <div class="row">
+            <div class="col-8 offset-2 mt-3">
+                <h3>Product Details </h3>
+                <br />
+                <div class="card">
+                    <img src="<%=listing.img%>" class="card-img-top show-img" alt="listing_img">
+                    <div class="card-body">
+                        <p class="card-text text-dark">
+                            <b><%=listing.title%></b><br/>
+                            <%=listing.description%><br/>
+                            &#8377; <%=listing.price.toLocaleString("en-IN")%><!-- per cost --> <br/>
+                            <%=listing.location%>
+                            <br/>
+                            <%=listing.country%>
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <div class="show-btns mb-5">
+                    <form method="get" action="/listings/<%=listing._id%>/edit">
+                        <button class="btn btn-dark show-e-btn " style="width: 6rem;">Edit </button>
+                    </form>
+                    <br />
+                    <form method="POST" action="/listings/<%=listing._id%>/?_method=DELETE">
+                        <button class="btn btn-dark del-btn" style="width: 6rem;">Delete </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>

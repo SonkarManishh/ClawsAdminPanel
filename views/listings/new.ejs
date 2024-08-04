@@ -1,0 +1,59 @@
+<% layout("/layouts/boilerplate") %>
+
+    <body>
+        <br/>
+        <center>
+            <h3>Create New Product</h3>
+        </center>
+        <br />
+        <div class="row">
+            <div class="col-8 offset-2">
+                <form method="POST" action="/listings" novalidate class="needs-validation">
+
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Product Name : </label>
+                        <input type="text" name="listing[title]" placeholder="Add a catchy title" class="form-control" required />
+                        <div class="invalid-feedback">Please enter a valid Title</div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description : </label>
+                        <textarea type="text" name="listing[description]"  cols="22"
+                        class="form-control" required ></textarea>
+                        <div class="invalid-feedback">Please enter a valid Description</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="img" class="form-label">Image : </label>
+                        <input type="text" name="" placeholder="Enter Image url/link"
+                            class="form-control" />
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="price" class="form-label">Price : </label>
+                            <input type="number" name="listing[price]" placeholder="1200" class="form-control" required />
+                            <div class="invalid-feedback">Please enter a valid Price</div>
+                        </div>
+    
+                        <div class="mb-3 col-md-8">
+                            <label for="location" class="form-label">Coupon : </label>
+                            <input type="text" name="listing[coupon]" placeholder="#ABC123" class="form-control" required />
+                            <div class="invalid-feedback">Please enter a valid Coupon code</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="offer" class="form-label">Offer : </label>
+                        <input type="text" name="listing[offer]" placeholder="20%" class="form-control" required />
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <br />
+                    <button class="btn btn-dark add-btn " style="width: 8rem;">Add </button>
+                    <br/>
+                    <br/>
+                </form>
+            </div>
+        </div>
+    </body>

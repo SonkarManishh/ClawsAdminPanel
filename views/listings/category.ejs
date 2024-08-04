@@ -1,0 +1,40 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <center><h3 class="mt-5">Create New Category</h3></center>
+    <br/>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <form method="post" action="/category" class="need-validation">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Category Name</label>
+                    <input type="text" id="title" name="category[title]" placeholder="Add a catchy title" class="form-control" required />
+                    <div class="invalid-feedback">
+                        Please enter a valid title.
+                    </div>
+                </div>
+
+                <!-- <div class="mb-3">
+                    <label for="description" class="form-label">Description:</label>
+                    <textarea id="description" name="category[description]" cols="22" class="form-control" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a valid description.
+                    </div>
+                </div> -->
+
+                <div class="mb-3">
+                    <label for="category-type" class="form-label">Category Type:</label>
+                    <select name="category[section]" id="category-type" class="form-control" required>
+                        <option value="">Select Category Type</option>
+                        <option value="merchandise">Merchandise</option>
+                        <option value="equipment">Equipment</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a category type.
+                    </div>
+                </div>
+
+                <button class="btn btn-dark add-btn mt-3 ms-1" style="width: 12rem;">Add</button>
+            </form>
+        </div>
+    </div>
+</body>

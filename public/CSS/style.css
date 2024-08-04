@@ -1,0 +1,263 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #eb1220;
+    font-size: 2.5rem;
+}
+.nav-link{
+    color: #222222 !important;
+    font-weight: 500 !important;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.f-info-socials{
+    width: 100%;
+    font-size: 1.5rem;
+}
+.f-info-socials i{
+    margin-right: 1rem;
+}
+.f-info-links{
+    width: 100%;
+}
+/* cards */
+.card{
+    border: none !important;
+    margin-bottom: 3rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+    /* color: black !important;; */
+}
+.card-text p{
+    font-weight: 400 !important;
+}
+.card img{
+    height: 15rem !important;
+}
+.listing-links{
+    text-decoration: none;
+}
+
+/* card effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+
+}
+
+/* new page */
+.add-btn{
+    background-color: #eb1220 !important;
+    border: none !important;
+}
+
+/* edit page */
+.edit-btn{
+    background-color: #eb1220 !important;
+    border: none !important;
+}
+
+/* show page */
+.show-img{
+    height: 30vh;
+}
+.show-btns{
+    display: flex;
+}
+.show-e-btn{
+    background-color: #eb1220 !important;
+    border: none !important;
+    width: 5rem;
+}
+.del-btn{
+    margin-left: 2rem;
+}
+
+.category-b{
+    margin-left: 10rem !important;
+    margin-top: -2.5rem!important;
+}
+.category-border{
+    /* border: 2px solid hotpink !important;; */
+    background-color: white;
+}
+ .cat-btn a{
+    color:white; 
+    text-decoration: none !important;
+ }
+ .cat-btn a:hover{
+    color: white !important;
+ }
+ 
+ .card-cate{
+    background-color: #6c757d  !important;
+    /* color: white !important; */
+    /* border: 1px solid white !important; */
+    padding-left: 0% !important;
+ }
+ @media (max-width: 768px){
+    .card-cate{ 
+        padding: 20%;
+    }
+ }
+ @media (max-width: 575px){
+    .card-cate{
+        padding: 15% !important;
+    }
+ }
+ @media (max-width: 425px){
+    .card-cate{
+        padding: 10% !important;
+    }
+ }
+ @media (max-width: 375px){
+    .card-cate{
+        padding: 1% !important;
+    }
+ }
+ .b-cate{
+    margin-top: 1rem;
+    padding: 5px;
+    border-radius: 5px !important;
+    border: 2px solid white !important;
+    background-color:  #6c757d !important;
+ }
+ .b-cate ul{
+    /* margin: 5px; 
+    border: 2px solid red !important; */
+ }
+ .div-cat{
+    display: flex; 
+    justify-content: center;
+ }
+
+ .navbar-nav{
+    display: flex; 
+    justify-content: center;
+    /* margin-left: 45%;
+    marl
+    margin-right: 45%; */
+    margin-left: -2rem;
+    font-size: 1.2rem;
+     
+ }
+ .navbar-nav .p{
+    margin-top: -2.7rem;
+    margin-left: 6rem;
+ }
+ .navbar-nav .h{ 
+    /* margin-right: 3rem; */
+ }
+
+ .navbar-nav a{
+    color: white !important;
+ }
+ .navbar-nav a:hover{
+    color: cornflowerblue !important;
+ }
+
+ .card-b{ 
+    border-radius: 5px;  
+    margin: 1px;
+    padding:1rem !important;
+    background-color: #6c757d;
+    color: white;
+    height: 20vh; 
+ }
+
+ @media (max-width:1200px ) and (min-width:575px){
+    .card-b{
+        height: 26vh;
+    }
+ }
+ @media (max-width:535px ) and (min-width:310px ){
+    .card-b{
+        height: 26vh;
+    }
+ }
+
+ .card-text{
+    color: white;
+ }
+ .card-b:hover{  
+    transition: all; 
+    color: orange;
+ }
+
+ .card-header{
+    display: flex !important;
+    justify-content: center !important;
+    color: white !important;
+   padding-bottom: 1rem !important;
+   padding-left: 5rem;
+   font-size: 1.5rem;
+ }
+
+ .div-body{
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+
+ .home-page{
+    background-color: #6c757d;
+ }
+ .home-screen{
+    background-color: #6c757d !important;
+ }
+
+ .card-pro{
+    border: 1px solid white !important;
+ }
+
+ .category-page{
+    background-color:  #6c757d  !important;
+    color: white !important;
+    
+ }
+
+ .footer-page{
+    border-top: 1px solid white !important;
+ }
+
+ .title-h{
+    border-radius: 3px !important;
+    font-weight: 600;
+ }
+
+ .Product-page{
+    color: black !important;
+ }
